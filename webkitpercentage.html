@@ -4,6 +4,8 @@
 		<title>webkit grid problem with % </title>
 
 		<style type="text/css" media="screen">
+			@import url("/css/zen-grids.css");
+
 			.rowfixed{ margin: 0 auto;	width:1000px; }
 			.row{ min-width:500px; max-width: 1000px; margin: 0 auto;}
 			//clearfix
@@ -23,7 +25,7 @@
 		the basic grid element is 8% widt and have a margin of 1% on each side which should give 10% for each element
 	</p>
 	<p>The problem occures when a wrapper is set to have a min & max width, but only in webkit browsers. :(</p>	
-	
+	<!--
 		<h2 class="row">fixed: 1000px</h2>
 		<div class="rowfixed">
 			<div class="width1">1 </div>
@@ -44,7 +46,7 @@
 			<div class="width2">2</div>
 			<div class="width2">2</div>
 		</div>
-
+-->
 
 		<h2 class="row">min: 500  - max 1000px</h2>
 		<div class="row">
@@ -68,6 +70,49 @@
 			<div class="width2">2</div>
 		</div>
 		
-		
+		<h2 class="row">min: 500  - max 1000px (Zen Grids)</h2>
+		<div class="row zen-grids">
+			<div class="width1">1 </div>
+			<div class="width1">1 </div>
+			<div class="width1">1 </div>
+			<div class="width1">1 </div>
+			<div class="width1">1 </div>
+			<div class="width1">1 </div>
+			<div class="width1">1 </div>
+			<div class="width1">1 </div>
+			<div class="width1">1 </div>
+			<div class="width1">1 </div>
+		</div>
+
+		<div class="row zen-grids">
+			<div class="width2">2</div>
+			<div class="width2">2</div>
+			<div class="width2">2</div>
+			<div class="width2">2</div>
+			<div class="width2">2</div>
+		</div>
+
+		<h2 class="row">min: 500  - max 1000px (Zen Grids w/ extra divs for bg colors)</h2>
+		<div class="row zen-grids">
+			<div class="width1"><div>1</div></div>
+			<div class="width1"><div>1</div></div>
+			<div class="width1"><div>1</div></div>
+			<div class="width1"><div>1</div></div>
+			<div class="width1"><div>1</div></div>
+			<div class="width1"><div>1</div></div>
+			<div class="width1"><div>1</div></div>
+			<div class="width1"><div>1</div></div>
+			<div class="width1"><div>1</div></div>
+			<div class="width1"><div>1</div></div>
+		</div>
+
+		<div class="row zen-grids">
+			<div class="width2"><div>2</div></div>
+			<div class="width2"><div>2</div></div>
+			<div class="width2"><div>2</div></div>
+			<div class="width2"><div>2</div></div>
+			<div class="width2"><div>2</div></div>
+		</div>
+
 	</body>
 </html>
