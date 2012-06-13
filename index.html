@@ -6,112 +6,87 @@
 		<style type="text/css" media="screen">
 			@import url("css/zen-grids.css");
 
-			.rowfixed{ margin: 0 auto;	width:1000px; }
-			.row{ min-width:500px; max-width: 1000px; margin: 0 auto;}
-			//clearfix
+			body { max-width: 1000px; margin: 0 auto; }
+			h2 { margin-top: 20px; }
+
+			// clearfix
 			.row:before, .row:after { content:""; display:table; }
 			.row:after { clear: both; }
 			.row { zoom: 1; }
 
-			[class*="width"] {float: left; margin: 0 1%}
-			.width1{width:8%; background-color: #8ca9db;}
-			.width2{width:18%;background-color: rgba(203,134,201,0.47);}			
+			[class*="width"] { float: left; margin: 0 1%; }
+			.width1{ width:8%; background-color: #8ca9db; }
+			.width2{ width:18%; background-color: rgba(203,134,201,0.47); }
 		</style>
 	</head>
 	<body>
 
 		<h1>webkit why u not love %</h1>
-	<p>
-		the basic grid element is 8% widt and have a margin of 1% on each side which should give 10% for each element
-	</p>
-	<p>The problem occures when a wrapper is set to have a min & max width, but only in webkit browsers. :(</p>	
-	<!--
-		<h2 class="row">fixed: 1000px</h2>
-		<div class="rowfixed">
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>																					
-			<div class="width1">1 </div>																								
-		</div>
-		<div class="rowfixed">
-			<div class="width2">2</div>
-			<div class="width2">2</div>
-			<div class="width2">2</div>
-			<div class="width2">2</div>
-			<div class="width2">2</div>
-		</div>
--->
 
 		<h2 class="row">min: 500  - max 1000px</h2>
 		<div class="row">
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>																					
-			<div class="width1">1 </div>																								
+			<div class="width1 r1c1">1</div>
+			<div class="width1 r1c2">1</div>
+			<div class="width1 r1c3">1</div>
+			<div class="width1 r1c4">1</div>
+			<div class="width1 r1c5">1</div>
+			<div class="width1 r1c6">1</div>
+			<div class="width1 r1c7">1</div>
+			<div class="width1 r1c8">1</div>
+			<div class="width1 r1c9">1</div>																					
+			<div class="width1 r1c10">1</div>																								
 		</div>
 
 		<div class="row">
-			<div class="width2">2</div>
-			<div class="width2">2</div>
-			<div class="width2">2</div>
-			<div class="width2">2</div>
-			<div class="width2">2</div>
+			<div class="width2 r2c1">2</div>
+			<div class="width2 r2c2">2</div>
+			<div class="width2 r2c3">2</div>
+			<div class="width2 r2c4">2</div>
+			<div class="width2 r2c5">2</div>
 		</div>
-		
+
 		<h2 class="row">min: 500  - max 1000px (Zen Grids)</h2>
 		<div class="row zen-grids">
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
-			<div class="width1">1 </div>
+			<div class="width1 r1c1">1</div>
+			<div class="width1 r1c2">1</div>
+			<div class="width1 r1c3">1</div>
+			<div class="width1 r1c4">1</div>
+			<div class="width1 r1c5">1</div>
+			<div class="width1 r1c6">1</div>
+			<div class="width1 r1c7">1</div>
+			<div class="width1 r1c8">1</div>
+			<div class="width1 r1c9">1</div>
+			<div class="width1 r1c10">1</div>
 		</div>
 
 		<div class="row zen-grids">
-			<div class="width2">2</div>
-			<div class="width2">2</div>
-			<div class="width2">2</div>
-			<div class="width2">2</div>
-			<div class="width2">2</div>
+			<div class="width2 r2c1">2</div>
+			<div class="width2 r2c2">2</div>
+			<div class="width2 r2c3">2</div>
+			<div class="width2 r2c4">2</div>
+			<div class="width2 r2c5">2</div>
 		</div>
 
 		<h2 class="row">min: 500  - max 1000px (Zen Grids w/ extra divs for bg colors)</h2>
 		<div class="row zen-grids">
-			<div class="width1"><div>1</div></div>
-			<div class="width1"><div>1</div></div>
-			<div class="width1"><div>1</div></div>
-			<div class="width1"><div>1</div></div>
-			<div class="width1"><div>1</div></div>
-			<div class="width1"><div>1</div></div>
-			<div class="width1"><div>1</div></div>
-			<div class="width1"><div>1</div></div>
-			<div class="width1"><div>1</div></div>
-			<div class="width1"><div>1</div></div>
+			<div class="width1 r1c1"><div>1</div></div>
+			<div class="width1 r1c2"><div>1</div></div>
+			<div class="width1 r1c3"><div>1</div></div>
+			<div class="width1 r1c4"><div>1</div></div>
+			<div class="width1 r1c5"><div>1</div></div>
+			<div class="width1 r1c6"><div>1</div></div>
+			<div class="width1 r1c7"><div>1</div></div>
+			<div class="width1 r1c8"><div>1</div></div>
+			<div class="width1 r1c9"><div>1</div></div>
+			<div class="width1 r1c10"><div>1</div></div>
 		</div>
 
 		<div class="row zen-grids">
-			<div class="width2"><div>2</div></div>
-			<div class="width2"><div>2</div></div>
-			<div class="width2"><div>2</div></div>
-			<div class="width2"><div>2</div></div>
-			<div class="width2"><div>2</div></div>
+			<div class="width2 r2c1"><div>2</div></div>
+			<div class="width2 r2c2"><div>2</div></div>
+			<div class="width2 r2c3"><div>2</div></div>
+			<div class="width2 r2c4"><div>2</div></div>
+			<div class="width2 r2c5"><div>2</div></div>
 		</div>
 
 	</body>
