@@ -20,6 +20,7 @@
 }
 .zen-grids .width1 div {
   background-color: #8ca9db;
+  width: 100%;
 }
 .zen-grids .r1c1 {
   float: left;
@@ -83,6 +84,7 @@
 }
 .zen-grids .width2 div {
   background-color: #e5c5e5;
+  width: 100%;
 }
 .zen-grids .r2c1 {
   float: left;
