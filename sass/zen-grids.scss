@@ -6,6 +6,9 @@ $zen-gutter-width: 2%;
 $zen-auto-include-item-base: false;
 $zen-box-sizing: content-box;
 
+$legacy-support-for-ie7: true;
+$legacy-support-for-ie6: true;
+
 .zen-grids {
   // Apply the mixin to the container.
   @include zen-grid-container;
