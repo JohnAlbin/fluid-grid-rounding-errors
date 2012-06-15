@@ -15,11 +15,8 @@ $zen-box-sizing: content-box;
     @include zen-grid-item-base;
   }
 
-  .width1 {
-    background-color: transparent;
-    div {
-      background-color: #8ca9db;
-    }
+  .width1 div {
+    background-color: #8ca9db;
   }
 
   .r1c1 {
@@ -53,11 +50,8 @@ $zen-box-sizing: content-box;
     @include zen-grid-item(1, 10);
   }
 
-  .width2 {
-    background-color: transparent;
-    div {
-      background-color: rgba(203,134,201,0.47);
-    }
+  .width2 div {
+    background-color: rgba(203,134,201,0.47);
   }
 
   .r2c1 {

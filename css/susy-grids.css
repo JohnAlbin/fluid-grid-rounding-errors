@@ -1,0 +1,42 @@
+.susy {
+  *zoom: 1;
+  max-width: 98%;
+  _width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.susy:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.susy .width1 {
+  width: 8.163%;
+  float: left;
+  margin-right: 2.041%;
+  display: inline;
+  background-color: #8ca9db;
+}
+.susy .r1c10 {
+  width: 8.163%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -2%;
+  display: inline;
+}
+.susy .width2 {
+  width: 18.367%;
+  float: left;
+  margin-right: 2.041%;
+  display: inline;
+  background-color: rgba(203, 134, 201, 0.47);
+}
+.susy .r2c5 {
+  width: 18.367%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -2%;
+  display: inline;
+}

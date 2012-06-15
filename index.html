@@ -5,26 +5,29 @@
 
 		<style type="text/css" media="screen">
 			@import url("css/zen-grids.css");
+			@import url("css/susy-grids.css");
 
-			body { max-width: 1000px; margin: 0 auto; }
-			h2 { margin-top: 20px; }
+			body { max-width: 1000px; margin: 0 auto; padding: 10px; }
+			h2 { margin-top: 20px; margin-bottom: 0; }
 
-			// clearfix
-			.row:before, .row:after { content:""; display:table; }
-			.row:after { clear: both; }
-			.row { zoom: 1; }
+			/* clearfix */
+			.standard:before, .standard:after { content: ""; display: table; }
+			.standard:after { clear: both; }
+			.standard { zoom: 1; }
 
-			[class*="width"] { float: left; margin: 0 1%; }
-			.width1{ width:8%; background-color: #8ca9db; }
-			.width2{ width:18%; background-color: rgba(203,134,201,0.47); }
+			.standard .width1, .standard .width2 { float: left; margin: 0 1%; }
+			.standard .width1 { width: 8%; background-color: #8ca9db; }
+			.standard .width2 { width: 18%; background-color: rgba(203,134,201,0.47); }
 		</style>
 	</head>
 	<body>
 
-		<h1>webkit why u not love %</h1>
+		<h1>Rounding errors in webkit, Opera (and older IEs and Firefoxes)</h1>
 
-		<h2 class="row">min: 500  - max 1000px</h2>
-		<div class="row">
+		<p>Affected browsers: Safari, Chrome, Opera, IE6, IE7</p>
+
+		<h2 class="row">Standard float: left method</h2>
+		<div class="row standard">
 			<div class="width1 r1c1">1</div>
 			<div class="width1 r1c2">1</div>
 			<div class="width1 r1c3">1</div>
@@ -37,7 +40,7 @@
 			<div class="width1 r1c10">1</div>																								
 		</div>
 
-		<div class="row">
+		<div class="row standard">
 			<div class="width2 r2c1">2</div>
 			<div class="width2 r2c2">2</div>
 			<div class="width2 r2c3">2</div>
@@ -45,8 +48,8 @@
 			<div class="width2 r2c5">2</div>
 		</div>
 
-		<h2 class="row">min: 500  - max 1000px (Zen Grids)</h2>
-		<div class="row zen-grids">
+		<h2 class="row">Susy</h2>
+		<div class="row susy">
 			<div class="width1 r1c1">1</div>
 			<div class="width1 r1c2">1</div>
 			<div class="width1 r1c3">1</div>
@@ -59,7 +62,7 @@
 			<div class="width1 r1c10">1</div>
 		</div>
 
-		<div class="row zen-grids">
+		<div class="row susy">
 			<div class="width2 r2c1">2</div>
 			<div class="width2 r2c2">2</div>
 			<div class="width2 r2c3">2</div>
@@ -67,7 +70,7 @@
 			<div class="width2 r2c5">2</div>
 		</div>
 
-		<h2 class="row">min: 500  - max 1000px (Zen Grids w/ extra divs for bg colors)</h2>
+		<h2 class="row">Zen Grids</h2>
 		<div class="row zen-grids">
 			<div class="width1 r1c1"><div>1</div></div>
 			<div class="width1 r1c2"><div>1</div></div>

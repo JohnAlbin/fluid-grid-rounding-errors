@@ -19,6 +19,7 @@ javascripts_dir = "js"
 # Require any additional compass plugins installed on your system.
 #require 'ninesixty'
 require 'zen-grids'
+require 'susy'
 
 
 ##

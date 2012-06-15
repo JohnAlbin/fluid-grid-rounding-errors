@@ -11,9 +11,6 @@
   border: 0 !important;
   word-wrap: break-word;
 }
-.zen-grids .width1 {
-  background-color: transparent;
-}
 .zen-grids .width1 div {
   background-color: #8ca9db;
 }
@@ -76,9 +73,6 @@
   width: 8%;
   margin-left: 90%;
   margin-right: -100%;
-}
-.zen-grids .width2 {
-  background-color: transparent;
 }
 .zen-grids .width2 div {
   background-color: rgba(203, 134, 201, 0.47);
