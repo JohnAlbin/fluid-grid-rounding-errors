@@ -13,11 +13,6 @@ $legacy-support-for-ie6: true;
   // Apply the mixin to the container.
   @include zen-grid-container;
 
-  // Apply common styles to all grid items.
-  .width1, .width2 {
-    @include zen-grid-item-base;
-  }
-
   .width1 div {
     background-color: #8ca9db;
     width: 100%;
@@ -74,4 +69,11 @@ $legacy-support-for-ie6: true;
   .r2c5 {
     @include zen-grid-item(2, 9);
   }
+
+  // Apply common styles to all grid items.
+  .width1, .width2 {
+    @include zen-grid-item-base;
+    margin-right: -100%;
+  }
+
 }

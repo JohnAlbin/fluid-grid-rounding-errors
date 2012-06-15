@@ -9,15 +9,6 @@
 .zen-grids:after {
   clear: both;
 }
-.zen-grids .width1, .zen-grids .width2 {
-  padding-left: 1%;
-  padding-right: 1%;
-  border: 0 !important;
-  word-wrap: break-word;
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
 .zen-grids .width1 div {
   background-color: #8ca9db;
   width: 100%;
@@ -114,5 +105,15 @@
   float: left;
   width: 18%;
   margin-left: 80%;
+  margin-right: -100%;
+}
+.zen-grids .width1, .zen-grids .width2 {
+  padding-left: 1%;
+  padding-right: 1%;
+  border: 0 !important;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
   margin-right: -100%;
 }
