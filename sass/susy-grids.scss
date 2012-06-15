@@ -20,7 +20,7 @@ $grid-padding   : 0;
 
   .width2 {
     @include span-columns(2);
-    background-color: rgba(203,134,201,0.47);
+    background-color: #e5c5e5;
   }
   .r2c5 {
     @include span-columns(2 omega);
