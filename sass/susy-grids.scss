@@ -6,6 +6,9 @@ $gutter-width   : 2%;
 $column-width   : (100% - $gutter-width * $total-columns) / $total-columns;
 $grid-padding   : 0;
 
+$legacy-support-for-ie7: true;
+$legacy-support-for-ie6: true;
+
 .susy {
   // Apply the mixin to the container.
   @include container;

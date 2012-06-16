@@ -1,0 +1,17 @@
+.standard {
+  overflow: hidden;
+  *zoom: 1;
+}
+.standard .width1,
+.standard .width2 {
+  float: left;
+  margin: 0 1%;
+}
+.standard .width1 {
+  width: 8%;
+  background-color: #8ca9db;
+}
+.standard .width2 {
+  width: 18%;
+  background-color: #e5c5e5;
+}

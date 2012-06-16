@@ -15,7 +15,7 @@ $legacy-support-for-ie6: true;
 
   .width1 div {
     background-color: #8ca9db;
-    width: 100%;
+    width: 100%; // Needed for IE6/7
   }
 
   .r1c1 {
@@ -51,7 +51,7 @@ $legacy-support-for-ie6: true;
 
   .width2 div {
     background-color: #e5c5e5;
-    width: 100%;
+    width: 100%; // Needed for IE6/7
   }
 
   .r2c1 {
@@ -73,7 +73,7 @@ $legacy-support-for-ie6: true;
   // Apply common styles to all grid items.
   .width1, .width2 {
     @include zen-grid-item-base;
-    margin-right: -100%;
+    margin-right: -100%; // Zen Grids 1.3
   }
 
 }
