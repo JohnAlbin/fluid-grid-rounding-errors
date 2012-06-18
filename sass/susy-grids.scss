@@ -3,8 +3,8 @@
 
 $total-columns  : 10;
 $gutter-width   : 2%;
-$column-width   : (100% - $gutter-width * $total-columns) / $total-columns;
 $grid-padding   : 0;
+$column-width   : (100% - ($gutter-width + $grid-padding) * $total-columns) / $total-columns;
 
 $legacy-support-for-ie7: true;
 $legacy-support-for-ie6: true;
